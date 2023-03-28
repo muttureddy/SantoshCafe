@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Santosh-Cafe</title>
+  <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="JS/myscript.js"></script>
+
+  <style type="text/css">
+    body{
+                  background-image: url(Images/menu-bg2.jpg);
+                  background-size: 100%;
+                  background-attachment: fixed;
+                  background-origin: all;
+                  box-sizing: border-box;         
+        }
+  </style>
+</head>
+<body class="text-white">
+      <div id="upbtn" class=" text-center">
+            <i  id="#" class="fa fa-paper-plane-o"></i>
+      </div>
+
+      <header class="navbar navbar-expand-md" id="navbar">
+        <div data-aos="zoom-out-up" class="font-weight-bold">
+          <a class="navbar-brand pl-lg-5 pl-sm-4 text-white" style="font-size: 30px;" href="./index"><h1>Santosh<span style="font-size: 50%;">CAFE</h1></span></a>
+        </div>
+        <button class="navbar-toggler navbar-dark" type="button"   data-toggle="collapse" data-target="#navbarTogglerDemo01">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end pr-5" style="font-size: 25px;" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ">
+                  <li class="nav-item pr-3" >
+                      <a class="nav-link"  href="index">Home</a>
+                  </li>
+                  <li class="nav-item pr-3" >
+                      <a class="nav-link"  href="about">About&nbsp;Us</a>
+                  </li>
+                  <li class="nav-item pr-3">
+                      <a class="nav-link"  href="menu">Menu</a>
+                  </li>
+                  <li class="nav-item pr-3">
+                    <a class="nav-link " href="booking">Reservation</a>
+                  </li>
+                  <li class="nav-item pr-3">
+                      <a class="nav-link active" href="contact">Contact&nbsp;Us</a>
+                  </li>
+                </ul>
+        </div>
+      </header>
+    
+
+
+<!-- Contact -->
+<section class="m-lg-5 contact-info text-white">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-white pt-5">
+      <h2 class="text-uppercase">Contact Us</h2>
+      <p>Write to us</p><br>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h6><u>Get In Touch</u></h6>
+        <p class="font-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, molestiae.</p>
+        <div class="row">
+            <i class="fa fa-map-marker"></i>
+            <div class="info">
+                <h3 class="head h4">Location:</h3>
+                <div class="sub-title">V.V Puram Bengaluru</div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <i class="fa fa-envelope"></i>
+            <div class="info">
+                <h3 class="head h4">Email:</h3>
+                <div class="sub-title"><a class="text-white" href="mailto:info@Santoshcafe.com"> info@Santosh.com</a></div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <i class="fa fa-volume-control-phone"></i>
+            <div class="info">
+                <h3 class="head h4">Phone:</h3>
+                <div class="sub-title"><a class="text-white" href="tel:+919988776655">+91&nbsp;99887&nbsp;76655</a></div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-7 col-sm-12">
+        <form class="p-0 m-1 contact" onsubmit="contact()">
+          <h3 class="mb-4">Write to us here</h3>
+          <div class="form-row">  
+            <div class="form-group col-md-6 col-sm-12">
+              <input type="text" required class="form-control" id="name"  placeholder="Name">
+            </div>
+            <div class="form-group col-md-6 col-sm-12">
+              <input type="email" required class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="tel" required class="form-control" name="Mobile No" id="subject" placeholder="Mobile No">
+          </div> 
+
+          <div class="form-group">
+            <input type="text" required class="form-control" name="subject" id="subject" placeholder="Subject">
+          </div>  
+          <div class="form-group">
+            <textarea class="form-control" required id="message" placeholder="Your Message" rows="3" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end contact -->
+
+<script type="text/javascript">
+            function contact(){
+                alert("Thank you for writing to us!!");
+            }
+</script>
+
+<!-- Map -->
+<section>
+<iframe style="width: 100%;border: none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.97197276616!2d77.59100921482133!3d12.909522890896616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1511cb93497b%3A0x223df3d96b5082ce!2sSpice%20Up!5e0!3m2!1sen!2sin!4v1630060814258!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<!-- End of Map -->
+  
+        <!-- footer start-->
+    <footer class="bg-f footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-4"> 
+              <h3>Santosh<span style="font-size: 50%;">CAFE</span></h3>
+              <p><a target="_blank" href="https://www.google.com/maps/place/Spice+Up/@12.909525,77.593292,17z/data=!4m5!3m4!1s0x0:0x223df3d96b5082ce!8m2!3d12.9095223!4d77.5932337?hl=en">Address <br>
+              KSRTC Layout, Bengaluru, Karnataka.</a>
+                <strong>Phone:</strong><a href="tel:+919988776655" type="call"> +91 99887 76655</a><br>
+                <strong>Email:</strong><a href="mailto:santosh@gmail.com"> info@Santosh.com</a><br>
+              </p>
+              <div class="social-links">
+                <a href="#" class="twitter p-2"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook p-2"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram p-2"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="google-plus p-2"><i class="fa fa-skype"></i></a>
+                <a href="#" class="linkedin p-2"><i class="fa fa-linkedin"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4">
+            <h3>Quick Links</h3>
+              <l class="l">
+                <li class="text-color"><a href="index">Home</a></li>
+                <li class="text-color"><a href="about">About Us</a></li>
+                <li class="text-color"><a href="menu">Menu</a></li>
+                <li class="text-color"><a href="contact">Contact Us</a></li>
+                <li class="text-color"><a href="booking">Registration</a></li>
+              </l>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4">
+            <h3>Opening hours</h3>
+            <p><span class="text-color">Sunday :</span>Closed</p>
+            <p><span class="text-color">Mon-Tue :</span> 9:Am - 10PM</p>
+            <p><span class="text-color">Wed-Thur :</span> 9:Am - 10PM</p>
+            <p><span class="text-color">Fri-Sat :</span> 5:PM - 10PM</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mb-4 footer-newsletter">
+            <h3>Our Newsletter</h3>
+            <p>Santosh Cafe is the best place for food lovers where each can enjoy the taste and essence of food.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="company-name">All Rights Reserved. &copy; 2021 <a href="index">Santosh Cafe</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- End Footer -->
+
+
+
+
+    <!-- bootstrap scripts -->
+    <script>  AOS.init();</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    
+  
+
+
+  
+
+</body>
+</html>

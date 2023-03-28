@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Santosh-Cafe</title>
+  <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="JS/myscript.js"></script>
+
+  <style type="text/css">
+    body{
+                  background-image: url(Images/menu-bg2.jpg);
+                  background-size: 100%;
+                  background-color: rgba(0, 2, 8, .8);
+                  background-position: fixed;
+                  background-attachment: fixed;
+                  background-origin: all;
+                  box-sizing: border-box;
+    }
+    
+  </style>
+
+</head>
+<body>
+
+      <div id="upbtn" class="btn text-center">
+            <a href="#"><i  class="fa fa-paper-plane-o"></i></a>
+      </div>
+
+      <header class="container-fluid navbar navbar-expand-md" id="navbar">
+            <div data-aos="zoom-out-up" class="font-weight-bold">
+              <a class="navbar-brand pl-lg-5 pl-sm-4 text-white" style="font-size: 30px;" href="./index"><h1>Santosh<span style="font-size: 50%;">CAFE</h1></span></a>
+            </div>
+            <button class="navbar-toggler navbar-dark"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end pr-5" style="font-size: 25px;" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item pr-3" >
+                          <a class="nav-link"  href="index">Home</a>
+                      </li>
+                      <li class="nav-item pr-3" >
+                          <a class="nav-link"  href="about">About&nbsp;Us</a>
+                      </li>
+                      <li class="nav-item pr-3">
+                          <a class="nav-link active"  href="menu">Menu</a>
+                      </li>
+                      <li class="nav-item pr-3">
+                          <a class="nav-link"  href="booking">Reservation</a>
+                      </li>
+                      <li class="nav-item pr-3">
+                          <a class="nav-link"  href="contact">Contact&nbsp;Us</a>
+                      </li>
+                    </ul>
+            </div>
+      </header>
+
+
+    <div  class="text-white d-flex align-items-center text-center" style="height:95vh;">
+      <div class="container justify-content-center">
+        <h1 class="display-2 mt-5" data-aos="fade-up" data-aos-delay="500">Menu<i class="fa fa-cutlery" aria-hidden="true"></i></h1><hr>
+        <p class="lead bd-highlight display-4 font-italic">"If you're not at the table, you're on the menu."</p>
+          <a class="btn-menu d-inline" href="#menu">Our Menu</a>
+          <a class="btn-menu d-inline" href="booking">Book Table</a>
+          <div class="col-12 arrow bounce" style="bottom: 20px; right: 0;">
+            <a href="#menu"><img src="Images/down.svg"></a>
+          </div>
+        </div>
+    </div>
+
+
+  
+
+
+
+   
+
+  <!-- Menu list -->
+  <div id="menu" class="mt-1">
+    <div class="container justify-content-center d-lg-flex border-3 mt-4 mb-3"  data-aos="fade-up" >
+        <ul class="nav ul text-left mr-4 nav-pills align-content-center flex-lg-column" >
+          <li class="nav-item">
+            <a class="nav-link text-white active" id="home-tab" data-toggle="tab">All</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-color text-white"  id="second-tab" data-toggle="tab">Appetizers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white"  id="third" data-toggle="tab" >Beverages</a>
+          </li>
+        </ul>
+              <section>
+                      <div class="container" data-aos="flip-right">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                      <div class="row">
+                                          <div class="appetizers col-lg-3 col-md-4 mb-4">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/pizza.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">Pizza</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;200</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="appetizers col-lg-3 col-md-4 mb-4">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/burger.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">Burger</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;80</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="appetizers col-lg-3 col-md-4 mb-4">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/fries.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">French Fries</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;120</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div  class="appetizers col-lg-3 col-md-4 mb-4">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/redsaucepasta.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">Pasta</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;120</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div  class="beverages col-lg-3 col-md-4 mb-4">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/tea.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">Green Tea</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;20</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="beverages col-lg-3 col-md-4 mb-4 ">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/hotchoc.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">Hot Chocolate</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;50</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                           <div class="beverages col-lg-3 col-md-4 mb-4">
+                                               <div class="card m-card" data-aos="flip-right">
+                                                 <img class="card-img-top" src="Images/coke.jpg">
+                                                   <div class="card-footer">
+                                                     <a href="#"><h6 class="float-left">Coke</h6></a>
+                                                         <span class="float-right">
+                                                             <span class="fa fa-star checked"></span>
+                                                             <span class="fa fa-star checked"></span>
+                                                             <span class="fa fa-star checked"></span>
+                                                             <span class="fa fa-star checked"></span>
+                                                             <span class="fa fa-star checked"></span>
+                                                         </span>
+                                                   </div>
+                                                   <div class="card-footer price">
+                                                     <h6 class="float-left">Price: &#8377;60</h6>
+                                                     <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                   </div>
+                                               </div>
+                                           </div>
+
+                                           <div class="beverages col-lg-3 col-md-4 mb-4">
+                                               <div class="card m-card" data-aos="flip-right">
+                                                 <img class="card-img-top" src="Images/coffee.jpg">
+                                                   <div class="card-footer">
+                                                     <a href="#"><h6 class="float-left">Coffee</h6></a>
+                                                         <span class="float-right">
+                                                             <span class="fa fa-star checked"></span>
+                                                             <span class="fa fa-star checked"></span>
+                                                             <span class="fa fa-star checked"></span>
+                                                             <span class="fa fa-star checked"></span>
+                                                             <span class="fa fa-star"></span>
+                                                         </span>
+                                                   </div>
+                                                   <div class="card-footer price">
+                                                     <h6 class="float-left">Price: &#8377;25</h6>
+                                                     <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                   </div>
+                                               </div>
+                                           </div>
+
+                                          <div class="appetizers col-lg-3 col-md-4 mb-4">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/noodles.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">Noodles</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;100</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="appetizers col-lg-3 col-md-4 mb-4">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/momo.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">Momos</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;130</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="appetizers col-lg-3 col-md-4 mb-4">
+                                              <div class="card m-card" data-aos="flip-right">
+                                                <img class="card-img-top" src="Images/sandwich.jpg">
+                                                  <div class="card-footer">
+                                                    <a href="#"><h6 class="float-left">Sandwich</h6></a>
+                                                        <span class="float-right">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </span>
+                                                  </div>
+                                                  <div class="card-footer price">
+                                                    <h6 class="float-left">Price: &#8377;90</h6>
+                                                    <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                         <div  class="appetizers col-lg-3 col-md-4 mb-4">
+                                             <div class="card m-card" data-aos="flip-right">
+                                               <img class="card-img-top" src="Images/nachos.jpg">
+                                                 <div class="card-footer">
+                                                   <a href="#"><h6 class="float-left">Nachos</h6></a>
+                                                       <span class="float-right">
+                                                           <span class="fa fa-star checked"></span>
+                                                           <span class="fa fa-star checked"></span>
+                                                           <span class="fa fa-star checked"></span>
+                                                           <span class="fa fa-star checked"></span>
+                                                           <span class="fa fa-star"></span>
+                                                       </span>
+                                                 </div>
+                                                 <div class="card-footer price">
+                                                   <h6 class="float-left">Price: &#8377;150</h6>
+                                                   <button class="float-right add"><i class="fa fa-plus plus"></i></button>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         
+                                    </div>
+                              </div>
+                          </div>
+                    </div>
+              </section>
+        </div>
+   </div>
+    <!-- end of menu -->
+ 
+
+            <!-- footer start-->
+        <footer class="bg-f footer-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mt-4"> 
+                  <h3>Santosh<span style="font-size: 50%;">CAFE</span></h3>
+                  <p><a target="_blank" href="https://www.google.com/maps/place/Spice+Up/@12.909525,77.593292,17z/data=!4m5!3m4!1s0x0:0x223df3d96b5082ce!8m2!3d12.9095223!4d77.5932337?hl=en">Address <br>
+                    KSRTC Layout, Bengaluru, Karnataka.</a>
+                    <strong>Phone:</strong><a href="tel:+919988776655" type="call"> +91 99887 76655</a><br>
+                    <strong>Email:</strong><a href="mailto:santosh@gmail.com"> info@Santosh.com</a><br>
+                  </p>
+                  <div class="social-links">
+                    <a href="#" class="twitter p-2"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook p-2"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram p-2"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="google-plus p-2"><i class="fa fa-skype"></i></a>
+                    <a href="#" class="linkedin p-2"><i class="fa fa-linkedin"></i></a>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mt-4">
+                <h3>Quick Links</h3>
+                  <l class="l">
+                    <li class="text-color"><a href="index">Home</a></li>
+                    <li class="text-color"><a href="about">About Us</a></li>
+                    <li class="text-color"><a href="menu">Menu</a></li>
+                    <li class="text-color"><a href="contact">Contact Us</a></li>
+                    <li class="text-color"><a href="booking">Registration</a></li>
+                  </l>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mt-4">
+                <h3>Opening hours</h3>
+                <p><span class="text-color">Sunday :</span>Closed</p>
+                <p><span class="text-color">Mon-Tue :</span> 9:Am - 10PM</p>
+                <p><span class="text-color">Wed-Thur :</span> 9:Am - 10PM</p>
+                <p><span class="text-color">Fri-Sat :</span> 5:PM - 10PM</p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mt-4 mb-4 footer-newsletter">
+                <h3>Our Newsletter</h3>
+                <p>Santosh Cafe is the best place for food lovers where each can enjoy the taste and essence of food.</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="company-name">All Rights Reserved. &copy; 2021 <a href="index">Santosh Cafe</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    <!-- End Footer -->
+
+
+<!-- bootstrap scripts -->
+      <script>  AOS.init();</script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    
+  
+</body>
+</html>

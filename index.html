@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Santosh-Cafe</title>
+  <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="JS/myscript.js"></script>
+
+  <style type="text/css">
+    body{
+                  background-image: url(Images/menu-bg2.jpg);
+                  background-size: 100%;
+                  background-attachment: fixed;
+                  background-origin: all;
+                  box-sizing: border-box;
+    }
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    overflow: visible;
+    background: #fff url('Images/Hourglass.gif') no-repeat center center;}
+  </style>
+
+</head>
+<body>
+
+<div id="loader"></div>
+  <div id="upbtn" class="btn text-center">
+    <a href="#"><i  class="fa fa-paper-plane-o"></i></a>
+  </div>
+  <header class="container-fluid navbar navbar-expand-md" id="navbar">
+        <div data-aos="zoom-out-up" class="font-weight-bold">
+          <a class="navbar-brand pl-lg-5 pl-sm-4 text-white" style="font-size: 30px;" href="./index"><h1>Santosh<span style="font-size: 50%;">CAFE</h1></span></a>
+        </div>
+        <button class="navbar-toggler navbar-dark"   type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end pr-5" style="font-size: 25px;" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ">
+                  <li class="nav-item pr-3" >
+                      <a class="nav-link active"  href="index">Home</a>
+                  </li>
+                  <li class="nav-item pr-3">
+                      <a class="nav-link"  href="about">About&nbsp;Us</a>
+                  </li>
+                  <li class="nav-item pr-3">
+                      <a class="nav-link"  href="menu">Menu</a>
+                  </li>
+                  <li class="nav-item pr-3">
+                      <a class="nav-link"  href="booking">Reservation</a>
+                  </li>
+                  <li class="nav-item pr-3">
+                      <a class="nav-link"  href="contact">Contact&nbsp;Us</a>
+                  </li>
+                </ul>
+        </div>
+  </header>
+ 
+
+
+
+
+<div  id="hero" class="text-white d-flex align-items-center justify-content-center align-content-center text-center" style="height:100vh;">
+   <div class="hero container mt-4">
+     <h1 class="display-3 hero-h1">Santosh CAFE</h1><hr>
+     <p class="lead font-italic">"People Who Love To Eat Are Always The Best People"</p>
+       <span class="mt-lg-2 ml-lg-4">
+         <p class="h3">Delivering great food for more than 5 years!</p>  
+       </span>
+       <div class="col-12 arrow bounce" style="bottom: 130px; right: 0;">
+         <a href="#events"><img src="Images/down.svg"></a>
+       </div>
+     </div>
+ </div>
+
+<!-- Events -->
+
+<section class="events event-item m-lg-5" id="events">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-white pt-5">
+      <h2 class="text-uppercase">Events</h2>
+      <p>Organize Your Events in our Restaurant</p>
+    </div>
+  </div>
+  <div class="container text-white">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="row">
+                    <div class="col-lg-6 p-lg-5 p-2">
+                      <img src="Images/event-birthday.jpg" class="img-fluid"  alt="event-birthday">
+                    </div>
+                    <div class="col-lg-6 p-lg-5 p-3">
+                      <h3>Birthday Parties</h3>
+                      <div class="price">
+                        <p><span>&#8377;1000</span></p>
+                      </div>
+                      <p class="font-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                      <ul>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                      </ul>
+                    </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                  <div class="col-lg-6 p-lg-5 p-2" >
+                    <img src="Images/event-private.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 p-lg-5 p-3">
+                    <h3>Private Parties</h3>
+                    <div class="price" >
+                      <p><span>&#8377;2000</span></p>
+                    </div>
+                    <p class="font-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.
+                    </p>
+                    <ul>
+                      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                      <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                  <div class="col-lg-6 p-lg-5 p-2">
+                    <img src="Images/event-custom.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 p-lg-5 p-3">
+                    <h3>Custom Parties</h3>
+                    <div class="price">
+                      <p><span>&#8377;3000</span></p>
+                    </div>
+                    <br>
+                    <p class="font-italic">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua.
+                    </p>
+                    <ul>
+                      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                      <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                      <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+</section>
+<!-- End of events -->
+
+
+
+
+
+  <!-- ======= Gallery Section ======= -->
+      <section id="gallery" class="m-lg-5 gallery border-0">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-white mb-5 mt-5">
+            <h2 class="text-uppercase">Gallery</h2>
+            <p>Some photos from Our Restaurant</p>
+          </div>
+        </div>
+
+        <div class="container mb-5" data-aos="fade-right" data-aos-delay="100">
+          <div class="row no-gutters">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/pizza.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/burger.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/fries.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/nachos.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/coffee.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/coke.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/sandwich.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a class="lightbox">
+                      <img class="img-fluid" src="images/redsaucepasta.jpg" alt="Gallery Images">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/gallery/gallery-1.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/gallery/gallery-2.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/gallery/gallery-3.jpg" alt="Gallery Images">
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                      <img class="img-fluid" src="images/gallery/gallery-5.jpg" alt="Gallery Images">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Gallery Section -->
+
+    
+
+
+
+        <!-- footer start-->
+    <footer class="bg-f footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-4"> 
+              <h3>Santosh<span style="font-size: 50%;">CAFE</span></h3>
+              <p><a target="_blank" href="https://www.google.com/maps/place/Spice+Up/@12.909525,77.593292,17z/data=!4m5!3m4!1s0x0:0x223df3d96b5082ce!8m2!3d12.9095223!4d77.5932337?hl=en">Address <br>
+                KSRTC Layout, Bengaluru, Karnataka.</a>
+                <strong>Phone:</strong><a href="tel:+919988776655" type="call"> +91 99887 76655</a><br>
+                <strong>Email:</strong><a href="mailto:santosh@gmail.com"> info@Santosh.com</a><br>
+              </p>
+              <div class="social-links">
+                <a href="#" class="twitter p-2"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook p-2"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram p-2"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="google-plus p-2"><i class="fa fa-skype"></i></a>
+                <a href="#" class="linkedin p-2"><i class="fa fa-linkedin"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4">
+            <h3>Quick Links</h3>
+              <l class="l">
+                <li class="text-color"><a href="index">Home</a></li>
+                <li class="text-color"><a href="about">About Us</a></li>
+                <li class="text-color"><a href="menu">Menu</a></li>
+                <li class="text-color"><a href="contact">Contact Us</a></li>
+                <li class="text-color"><a href="booking">Registration</a></li>
+              </l>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4">
+            <h3>Opening hours</h3>
+            <p><span class="text-color">Sunday :</span>Closed</p>
+            <p><span class="text-color">Mon-Tue :</span> 9:Am - 10PM</p>
+            <p><span class="text-color">Wed-Thur :</span> 9:Am - 10PM</p>
+            <p><span class="text-color">Fri-Sat :</span> 5:PM - 10PM</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mb-4 footer-newsletter">
+            <h3>Our Newsletter</h3>
+            <p>Santosh Cafe is the best place for food lovers where each can enjoy the taste and essence of food.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="company-name">All Rights Reserved. &copy; 2021 <a href="index">Santosh Cafe</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- End Footer -->
+
+
+
+
+
+<!-- bootstrap scripts -->
+      <script>  AOS.init();</script>
+      <script type="text/javascript">
+        var loader;
+
+        function loadNow(opacity) {
+            if (opacity <= 0) {
+                displayContent();
+            } else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function() {
+                    loadNow(opacity - 0.1);
+                }, 100);
+            }
+        }
+        function displayContent() {
+            loader.style.display = 'none';
+            // document.getElementById('content').style.display = 'block';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        });
+      </script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    
+  
+</body>
+</html>
